@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Cause
+  name: cause
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: Cause
+      app: cause
   template:
     metadata:
       labels:
-        app: Cause
+        app: cause
     spec:
       containers:
-      - image: okteto.dev/Cause:latest
-        name: Cause
+      - image: okteto.dev/cause:latest
+        name: cause
         ports:
         - containerPort: 8080
         env:
