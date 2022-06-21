@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: liyec
+  name: docter
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: liyec
+      app: docter
   template:
     metadata:
       labels:
-        app: liyec
+        app: docter
     spec:
       containers:
-      - image: okteto.dev/liyec:latest
-        name: liyec
+      - image: okteto.dev/docter:latest
+        name: docter
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.plex.tv"
         - name: Vless_UUID
-          value: "7b298dea-c604-4426-8ea1-09801c97ff8d"
+          value: "dda14282-401d-42b9-a3a7-19355076a373"
         - name: Vless_Path
-          value: "/oastcvb"
+          value: "/DHe6h34y"
         - name: Vmess_UUID
-          value: "7b298dea-c604-4426-8ea1-09801c97ff8d"
+          value: "dda14282-401d-42b9-a3a7-19355076a373"
         - name: Vmess_Path
-          value: "/likfdf"
+          value: "/gt6srytd"
         - name: Share_Path
           value: "/Share547"
