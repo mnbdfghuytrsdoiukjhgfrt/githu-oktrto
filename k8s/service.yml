@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dancing
+  name: Cause
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "dancing"
+  - name: "Cause"
     port: 8080
   selector:
-    app: dancing
+    app: Cause
