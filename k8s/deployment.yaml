@@ -25,10 +25,10 @@ spec:
         - name: Vless_UUID
           value: "7b298dea-c604-4426-8ea1-09801c97ff8d"
         - name: Vless_Path
-          value: "/Coastcvb"
+          value: "/oastcvb"
         - name: Vmess_UUID
           value: "7b298dea-c604-4426-8ea1-09801c97ff8d"
         - name: Vmess_Path
-          value: "/Alikfdf"
+          value: "/likfdf"
         - name: Share_Path
           value: "/Share547"
