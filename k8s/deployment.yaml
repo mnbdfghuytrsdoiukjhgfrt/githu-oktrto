@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: greact
+  name: liyec
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: greact
+      app: liyec
   template:
     metadata:
       labels:
-        app: greact
+        app: liyec
     spec:
       containers:
-      - image: okteto.dev/greact:latest
-        name: greact
+      - image: okteto.dev/liyec:latest
+        name: liyec
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "moviesjoy.to"
+          value: "www.plex.tv"
         - name: Vless_UUID
-          value: "96b0cc3d-37d7-4495-a008-ccb5ceca877b"
+          value: "7b298dea-c604-4426-8ea1-09801c97ff8d"
         - name: Vless_Path
-          value: "/ytAT7YIK"
+          value: "/Coastcvb"
         - name: Vmess_UUID
-          value: "96b0cc3d-37d7-4495-a008-ccb5ceca877b"
+          value: "7b298dea-c604-4426-8ea1-09801c97ff8d"
         - name: Vmess_Path
-          value: "/huiekth4r"
+          value: "/Alikfdf"
         - name: Share_Path
-          value: "/Share443"
+          value: "/Share547"
