@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: uenow
+  name: greact
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: uenow
+      app: greact
   template:
     metadata:
       labels:
-        app: uenow
+        app: greact
     spec:
       containers:
-      - image: okteto.dev/uenow:latest
-        name: uenow
+      - image: okteto.dev/greact:latest
+        name: greact
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.azmovies.net"
+          value: "moviesjoy.to"
         - name: Vless_UUID
-          value: "ad71bcb9-729d-4c56-9965-22d5bc48327e"
+          value: "96b0cc3d-37d7-4495-a008-ccb5ceca877b"
         - name: Vless_Path
-          value: "/dfYRYT57"
+          value: "/ytAT7YIK"
         - name: Vmess_UUID
-          value: "ad71bcb9-729d-4c56-9965-22d5bc48327e"
+          value: "96b0cc3d-37d7-4495-a008-ccb5ceca877b"
         - name: Vmess_Path
-          value: "/ERr5ui4ty"
+          value: "/huiekth4r"
         - name: Share_Path
-          value: "/Share034"
+          value: "/Share443"
