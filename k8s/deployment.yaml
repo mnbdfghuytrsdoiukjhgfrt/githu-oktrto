@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: dancing
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: dancing
   template:
     metadata:
       labels:
-        app: ray
+        app: dancing
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/dancing:latest
+        name: dancing
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "$ProxySite"
+          value: "www.anime-planet.com"
         - name: Vless_UUID
-          value: "$Vless_UUID"
+          value: "0c0c2234-8ecd-4d01-8893-62672ce44615"
         - name: Vless_Path
-          value: "$Vless_Path"
+          value: "/Grebe43"
         - name: Vmess_UUID
-          value: "$Vmess_UUID"
+          value: "0c0c2234-8ecd-4d01-8893-62672ce44615"
         - name: Vmess_Path
-          value: "$Vmess_Path"
+          value: "/seachew"
         - name: Share_Path
-          value: "$Share_Path"
+          value: "/Share831"
